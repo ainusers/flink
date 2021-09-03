@@ -19,23 +19,25 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="549e656e-297c-4132-b657-8c5750b99e10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/analysis/flink/env/DefaultEnv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="549e656e-297c-4132-b657-8c5750b99e10" name="Default Changelist" comment="feat: 创建批处理、流处理、本地运行环境">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_luben_zstd_jni_1_4_5_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_0_10_2_12_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_0_11_2_12_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_0_9_2_12_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_flink_flink_connector_kafka_base_2_12_1_10_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_2_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/analysis/flink/source/FromFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/analysis/flink/source/FromKafka.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/analysis/flink/transform/Operator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_lz4_lz4_java_1_5_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_7_7.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/flink.iml" beforeDir="false" afterPath="$PROJECT_DIR$/flink.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/flink.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/analysis/flink/FlinkApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/analysis/flink/PatchHandle$MyFlatMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/analysis/flink/PatchHandle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/analysis/flink/StreamHandle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hello.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/analysis/flink/FlinkApplicationTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/analysis/flink/source/FromCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/analysis/flink/source/FromCollection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/analysis/flink/FlinkApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/analysis/flink/FlinkApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +76,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1630505670756" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/analysis/flink" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -83,11 +85,28 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.analysis.flink.source" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\百宝箱\项目代码\flink\src\main\resources" />
       <recent name="D:\百宝箱\项目代码\flink\src\main\java\com\analysis\flink" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.FlinkApplicationTests.contextLoads">
+    <configuration name="FromCollection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.analysis.flink.source.FromCollection" />
+      <module name="flink" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.analysis.flink.source.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Patch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.analysis.flink.Patch" />
       <module name="flink" />
@@ -142,6 +161,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FlinkApplicationTests.contextLoads" />
+        <item itemvalue="Application.FromCollection" />
         <item itemvalue="JUnit.FlinkApplicationTests" />
         <item itemvalue="Application.Patch" />
       </list>
@@ -160,17 +180,18 @@
       <workItem from="1630221437066" duration="4212000" />
       <workItem from="1630328973159" duration="1194000" />
       <workItem from="1630502171468" duration="1195000" />
-      <workItem from="1630562177514" duration="250000" />
+      <workItem from="1630562177514" duration="9524000" />
+      <workItem from="1630636199636" duration="6214000" />
     </task>
+    <task id="LOCAL-00001" summary="feat: 创建批处理、流处理、本地运行环境">
+      <created>1630562440746</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1630562440746</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TestHistory">
-    <history-entry file="FlinkApplicationTests - 2021.08.29 at 16h 22m 32s.xml">
-      <configuration name="FlinkApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="FlinkApplicationTests_contextLoads - 2021.08.29 at 16h 30m 01s.xml">
-      <configuration name="FlinkApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -185,31 +206,60 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: 创建批处理、流处理、本地运行环境" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 创建批处理、流处理、本地运行环境" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="371" y="87" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1630636437671">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="87" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630636437671" />
     <state x="535" y="72" key="FileChooserDialogImpl" timestamp="1630562208800">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="535" y="72" key="FileChooserDialogImpl/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562208800" />
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1630562313102">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom" timestamp="1630631338877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562313102" />
-    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1630562313101">
+    <state width="1237" height="221" key="GridCell.Tab.0.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338877" />
+    <state width="1237" height="221" key="GridCell.Tab.0.center" timestamp="1630631338877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562313101" />
-    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1630562313101">
+    <state width="1237" height="221" key="GridCell.Tab.0.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338877" />
+    <state width="1237" height="221" key="GridCell.Tab.0.left" timestamp="1630631338877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562313101" />
-    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1630562313102">
+    <state width="1237" height="221" key="GridCell.Tab.0.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338877" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right" timestamp="1630631338877">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562313102" />
+    <state width="1237" height="221" key="GridCell.Tab.0.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338877" />
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom" timestamp="1630631338878">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.bottom/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338878" />
+    <state width="1237" height="221" key="GridCell.Tab.1.center" timestamp="1630631338878">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.center/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338878" />
+    <state width="1237" height="221" key="GridCell.Tab.1.left" timestamp="1630631338878">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.left/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338878" />
+    <state width="1237" height="221" key="GridCell.Tab.1.right" timestamp="1630631338878">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="221" key="GridCell.Tab.1.right/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630631338878" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1630562226012">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562226012" />
+    <state x="233" y="60" key="Vcs.Push.Dialog.v2" timestamp="1630562442323">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="60" key="Vcs.Push.Dialog.v2/0.0.1280.680/1920.0.1920.1040@0.0.1280.680" timestamp="1630562442323" />
   </component>
 </project>

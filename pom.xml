@@ -17,6 +17,12 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
+        <!-- kafka-flink连接器 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-kafka-0.11_2.12</artifactId>
+            <version>1.10.1</version>
+        </dependency>
         <!-- flink -->
         <dependency>
             <groupId>org.apache.flink</groupId>

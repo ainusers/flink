@@ -8,6 +8,7 @@ class FlinkApplicationTests {
 
     @Test
     void contextLoads() throws Exception {
+
     }
 
 }
