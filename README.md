@@ -18,6 +18,14 @@
     4.1. map
     4.2. flagmap
     4.3. filter
-    4.4. map-reduce
-    4.5. Split
-    4.6. Select
+    4.4. keyBy
+    4.5. map-reduce
+    4.6. Split
+    4.7. Select
+    4.8. connect
+    4.9. CoMap、CoFlatMap
+    4.10. union
+
+Connect与Union 区别： 
+1. Union 之前两个流的类型必须是一样，Connect 可以不一样，在之后的 coMap中再去调整成为一样的
+2. Connect 只能操作两个流， Union 可以操作多个
