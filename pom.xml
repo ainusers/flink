@@ -17,7 +17,25 @@
         <java.version>1.8</java.version>
     </properties>
     <dependencies>
-        <!-- kafka-flink连接器 -->
+        <!-- jdbc驱动依赖 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.44</version>
+        </dependency>
+        <!-- sink-elasticsearch -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-connector-elasticsearch6_2.12</artifactId>
+            <version>1.10.1</version>
+        </dependency>
+        <!-- sink-redis -->
+        <dependency>
+            <groupId>org.apache.bahir</groupId>
+            <artifactId>flink-connector-redis_2.11</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <!-- kafka-flink-source/sink连接器 -->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-kafka-0.11_2.12</artifactId>
@@ -52,6 +70,14 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>9</source>
+                    <target>9</target>
+                </configuration>
             </plugin>
         </plugins>
     </build>

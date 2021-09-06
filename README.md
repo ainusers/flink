@@ -29,3 +29,9 @@
 Connect与Union 区别： 
 1. Union 之前两个流的类型必须是一样，Connect 可以不一样，在之后的 coMap中再去调整成为一样的 <br/>
 2. Connect 只能操作两个流， Union 可以操作多个
+
+5. sink
+    5.1. sinkKafka
+    5.2. sinkRedis
+    5.3. sinkElasticsearch
+    5.4. customSinkTarget
