@@ -35,3 +35,14 @@ Connect与Union 区别：
     5.2. sinkRedis
     5.3. sinkElasticsearch
     5.4. customSinkTarget
+    
+6. window (time/count)
+    1. 滚动窗口（Tumbling Windows）
+    2. 滑动窗口（Sliding Windows）
+    3. 会话窗口（Session Windows）
+    4. 聚合函数 (incremental、aggregation、function)
+    5. 乱序数据 (allowedLateness、sideOutputLateData、getSideOutput)
+    
+7. 时间语义和watermark
+    1. 流处理计算时间一般按照源数据实际发生的时间(Event Time)，而不是当前系统时间
+    2. watermark
