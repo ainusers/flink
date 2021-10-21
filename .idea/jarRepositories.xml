@@ -4,12 +4,12 @@
     <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="sncbackground-release-v" />
-      <option name="url" value="https://af-biz.qianxin-inc.cn:443/artifactory/sncbackground-release-v" />
+      <option name="url" value="https://xxx" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="snapshots" />
       <option name="name" value="sncbackground-snapshot-v" />
-      <option name="url" value="https://af-biz.qianxin-inc.cn:443/artifactory/sncbackground-snapshot-v" />
+      <option name="url" value="https://xxx" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
